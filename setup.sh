@@ -22,3 +22,16 @@ fi
 # link .bashrc
 ln -s ~/bash/bashrc ~/.bashrc
 
+# backup .inputrc if present
+if [ -f ~/.inputrc ]; then
+    DATE=`date '+%Y-%m-%d_%H:%M:%S'`
+    cp ~/.inputrc ~/.input.$DATE
+    rm ~/.inputrc
+fi
+
+# link .inputrc
+ln -s ~/bash/inputrc ~/.inputrc
+
+
+
+
