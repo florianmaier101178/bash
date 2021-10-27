@@ -6,3 +6,7 @@
 "\C-e.":end-of-line
 "\C-l":clear-screen
 
+$if Bash
+    Space: magic-space
+$endif
+
