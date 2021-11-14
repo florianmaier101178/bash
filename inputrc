@@ -10,3 +10,9 @@ $if Bash
     Space: magic-space
 $endif
 
+"\ey": 'cd /home/flo/projects/cot && /home/flo/tmux/bin/tmux-sessionizer.sh\015'
+
+"\ex": 'selected=$(find 2>/dev/null . -type d -maxdepth 1 | fzf --height 40% --reverse); cd $selected\015'
+
+"\ec": 'cd /home/flo/projects/cot\015'
+
